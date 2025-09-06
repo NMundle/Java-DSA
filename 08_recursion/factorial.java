@@ -1,0 +1,15 @@
+public class factorial {
+
+    public static int fact(int n){
+        if(n == 0){
+            return 1;
+        }
+        int fbm1 = fact(n - 1);
+        int fn = n * fbm1;
+        return fn;
+    }
+    public static void main(String[] args) {
+        int n = 5;
+        System.out.println(fact(n));
+    }
+}
